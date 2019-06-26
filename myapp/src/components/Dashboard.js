@@ -55,10 +55,18 @@ class Dashboard extends React.Component {
     return (
       <>
         <Display balls={this.state.balls} strikes={this.state.strikes} />
-        <button onClick={this.incrementStrikes}>Strikes</button>
-        <button onClick={this.incrementBalls}>Balls</button>
-        <button onClick={this.incrementFouls}>Fouls</button>
-        <button onClick={this.incrementHit}>Hits</button>
+        <button data-testid="btn" onClick={this.incrementStrikes}>
+          Strikes
+        </button>
+        <button data-testid="btn" onClick={this.incrementBalls}>
+          Balls
+        </button>
+        <button data-testid="btn" onClick={this.incrementFouls}>
+          Fouls
+        </button>
+        <button data-testid="btn" onClick={this.incrementHit}>
+          Hit
+        </button>
       </>
     );
   }

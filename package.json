@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/RodBromberg/webtesting-ii-challenge/issues"
   },
-  "homepage": "https://github.com/RodBromberg/webtesting-ii-challenge#readme"
+  "homepage": "https://github.com/RodBromberg/webtesting-ii-challenge#readme",
+  "devDependencies": {
+    "@testing-library/react": "^8.0.4",
+    "jest": "^24.8.0"
+  }
 }
