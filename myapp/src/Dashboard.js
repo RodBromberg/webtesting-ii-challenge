@@ -17,9 +17,9 @@ class Dashboard extends React.Component {
         strikes: 0
       });
     } else {
-      this.setState({
-        balls: this.state.balls + 1
-      });
+      this.setState(prevstate => ({
+        balls: prevstate.balls + 1
+      }));
     }
   };
 
@@ -44,6 +44,13 @@ class Dashboard extends React.Component {
     }
   };
 
+  incrementHit = e => {
+    this.setState({
+      balls: 0,
+      strikes: 0
+    });
+  };
+
   render() {
     return (
       <>
@@ -51,7 +58,7 @@ class Dashboard extends React.Component {
         <button onClick={this.incrementStrikes}>Strikes</button>
         <button onClick={this.incrementBalls}>Balls</button>
         <button onClick={this.incrementFouls}>Fouls</button>
-        <button onClick={this.increment}>Hits</button>
+        <button onClick={this.incrementHit}>Hits</button>
       </>
     );
   }

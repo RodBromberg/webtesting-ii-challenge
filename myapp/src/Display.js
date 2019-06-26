@@ -8,8 +8,8 @@ class Display extends React.Component {
   render() {
     return (
       <>
-        <h2>{this.props.balls}</h2>
-        <h2>{this.props.strikes}</h2>
+        <h2>Balls:{this.props.balls}</h2>
+        <h2>Strikes:{this.props.strikes}</h2>
       </>
     );
   }
